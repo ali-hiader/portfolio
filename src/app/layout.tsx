@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import { Yuji_Mai, Poppins } from "next/font/google";
 
-// const yujiMai = Yuji_Mai({
-//   variable: "--font-Yuji_Mai",
-//   subsets: ["latin"],
-//   weight: "400",
-// });
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-// const poppins = Poppins({
-//   variable: "--font-Poppins",
-//   subsets: ["latin"],
-//   weight: ["400", "500", "600", "700", "800"],
-// });
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,12 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // ${yujiMai.variable} ${poppins.variable}
-
     <html lang="en">
       <body
-        className={`
-           antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
