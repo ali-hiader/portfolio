@@ -17,6 +17,7 @@ const share_Tech_Mono = Share_Tech_Mono({
 
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--font-cormorant-garamond",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
