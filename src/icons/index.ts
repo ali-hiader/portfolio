@@ -15,6 +15,7 @@ import { NpmIcon } from "./npm";
 import { PnpmIcon } from "./pnpm";
 import { PostgresqlLogo } from "./postgresql";
 import { React } from "./react";
+import { StripeIcon } from "./stripe";
 import { SvelteIcon } from "./svelte";
 import { TailwindcssIcon } from "./tailwind-css";
 import { TypescriptIcon } from "./type-script";
@@ -60,6 +61,11 @@ export const technologies = [
     name: "Svelte",
     href: "https://svelte.dev/",
     src: SvelteIcon,
+  },
+  {
+    name: "Stripe",
+    href: "https://stripe.com/",
+    src: StripeIcon,
   },
   { name: "NPM", href: "https://www.npmjs.com/", src: NpmIcon },
   { name: "PNPM", href: "https://pnpm.io/", src: PnpmIcon },
