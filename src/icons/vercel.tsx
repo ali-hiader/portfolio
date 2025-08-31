@@ -21,7 +21,7 @@ export function VercelIcon(props: SVGProps<SVGSVGElement>) {
           gradientUnits="userSpaceOnUse"
         >
           <stop offset={0}></stop>
-          <stop offset={1} stopColor="#fff"></stop>
+          <stop offset={1} stopColor="#222"></stop>
         </linearGradient>
       </defs>
       <path

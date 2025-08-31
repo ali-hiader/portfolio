@@ -1,4 +1,5 @@
 import AboutMe from "@/components/about-me";
+import ContactBtn from "@/components/contact-btn";
 import ImageDialog from "@/components/image-dialog";
 import { certificatesData } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
@@ -28,6 +29,9 @@ function AboutMePage() {
           ))}
         </div>
       </section>
+      <div className="w-full mb-16 flex justify-center">
+        <ContactBtn />
+      </div>
     </main>
   );
 }

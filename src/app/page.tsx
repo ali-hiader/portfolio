@@ -54,7 +54,7 @@ function Home() {
               )
             )}
 
-          <div className="-mt-10 mb-10 flex flex-col items-center">
+          <div className="mt-10 mb-10 flex flex-col items-center">
             <p className="mb-2 text-primary-foreground">Want to see more?</p>
             <Link
               className="group flex w-fit items-center px-4 py-2 font-medium duration-200 disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none border border-primary-foreground hover:bg-emerald-50 hover:border-transparent"

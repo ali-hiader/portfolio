@@ -1,5 +1,6 @@
 "use client";
 
+import ContactBtn from "@/components/contact-btn";
 import ProjectShowcase from "@/components/project";
 import { filterOptions, projects } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
@@ -62,6 +63,9 @@ function ProjectsPage() {
           />
         ))}
       </section>
+      <div className="w-full mb-12 mt-6 flex justify-center">
+        <ContactBtn />
+      </div>
     </main>
   );
 }

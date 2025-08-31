@@ -34,11 +34,8 @@ function ContactPage() {
   }
 
   return (
-    <section className="mb-12">
-      <h2
-        id="contact"
-        className="mb-2 scroll-mt-20 box-decoration-clone bg-clip-text text-[1.7rem] font-[750] motion-reduce:transition-none"
-      >
+    <section className="mb-12" id="contact">
+      <h2 className="mb-2 scroll-mt-20 box-decoration-clone bg-clip-text text-[1.7rem] font-[750] motion-reduce:transition-none">
         Contact me
         <span className="bg-gradient-to-r from-[#6310ff] to-[#1491ff] box-decoration-clone bg-clip-text text-fill-transparent dark:from-[#a2facf] dark:to-[#64acff]">
           .

@@ -59,13 +59,16 @@ export default function NavBar() {
 
           {/* CTA Button */}
           <li className="list-none">
-            <button className="relative inline-block cursor-pointer  bg-emerald-600 px-4 py-1.5 text-sm font-medium text-white transition-all duration-300 hover:bg-emerald-700">
-              Book a Call
+            <Link
+              className="relative inline-block cursor-pointer  bg-emerald-600 px-4 py-1.5 text-sm font-medium text-white transition-all duration-300 hover:bg-emerald-700"
+              href="\#contact"
+            >
+              Let&apos;s Talk
               <div
                 aria-hidden="true"
                 className="absolute bottom-0 h-1/3 w-full -translate-x-4 bg-emerald-600 opacity-30 blur-sm"
               />
-            </button>
+            </Link>
           </li>
         </ul>
       </div>
