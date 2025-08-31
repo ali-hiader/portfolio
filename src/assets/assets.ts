@@ -1,5 +1,5 @@
-import logo from "./Images/Logos/4x/Asset 4@4x.png";
-import profilePic from "./Images/personal-1.png";
+import desktopSetup from "./Images/desktop-setup.jpg";
+import profilePic from "./Images/logo.jpg";
 
 import htmlCssCertificate from "@/assets/certificates/html-css.jpg";
 import jsCertificate from "@/assets/certificates/js.jpg";
@@ -17,8 +17,11 @@ import revisorvenTwo from "./revisorven/1.png";
 import revisorvenThree from "./revisorven/2.png";
 import revisorvenFour from "./revisorven/3.png";
 
+import lineaOne from "./linea/1.png";
+import lineaTwo from "./linea/2.png";
+
 export const assets = {
-  logo,
+  desktopSetup,
   profilePic,
   htmlCssCertificate,
   jsCertificate,
@@ -40,3 +43,5 @@ export const revisorvenImages = [
   revisorvenThree,
   revisorvenFour,
 ];
+
+export const lineaImages = [lineaOne, lineaTwo];

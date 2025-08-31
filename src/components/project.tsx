@@ -56,7 +56,10 @@ export default function ProjectShowcase({ project }: { project: Project }) {
   return (
     <div className="mb-16 overflow-hidden duration-200 motion-reduce:transition-none">
       {/* Heading */}
-      <h3 className="mb-2 text-2xl font-bold tracking-[-0.03em] text-primary-foreground">
+      <h3
+        id={title.split(" ")[0].toLowerCase()}
+        className="mb-2 text-2xl font-bold tracking-[-0.03em] text-primary-foreground"
+      >
         {title}
       </h3>
       {(periodISO || periodLabel) && (

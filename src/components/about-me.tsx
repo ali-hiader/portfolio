@@ -103,9 +103,13 @@ function AboutMe({ isAboutPage }: Props) {
         className="mt-8 md:mt-0 flex items-start justify-end"
         style={{ opacity: 1, transform: "none" }}
       >
-        <div className="max-w-96 relative h-fit border border-[#333]  bg-primary text-white shadow flex flex-col">
-          <div className="w-fit">
-            <Image src={assets.profilePic} alt="me" className="object-top" />
+        <div className="max-w-96 max-h-[400px] relative h-fit border border-[#333]  bg-primary text-white shadow flex flex-col">
+          <div className="w-fit overflow-hidden">
+            <Image
+              src={assets.desktopSetup}
+              alt="my desktop setup"
+              className="object-top"
+            />
           </div>
           <div className="-z-50 absolute border-8 top-0 bottom-0 right-0 left-0 translate-y-6 translate-x-6 border-primary"></div>
         </div>

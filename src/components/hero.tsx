@@ -8,7 +8,7 @@ export default function Hero() {
         {/* Text Section */}
         <div className="space-y-6 max-w-xl flex flex-col items-center">
           <h1 className="text-4xl lg:text-5xl font-bold headingFont text-center">
-            Flexible scheduling software to help you succeed
+            Automated booking systems to help you succeed
           </h1>
           <p className="text-lg text-center text-white/90">
             With seamless client scheduling, secure payments, and workflow

@@ -6,7 +6,12 @@ import client2 from "@/assets/clients/client-2.jpg";
 import client3 from "@/assets/clients/client-3.jpg";
 import client4 from "@/assets/clients/client-6.jpg";
 
-import { assets, lejverabilImages, revisorvenImages } from "@/assets/assets";
+import {
+  assets,
+  lejverabilImages,
+  lineaImages,
+  revisorvenImages,
+} from "@/assets/assets";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -86,35 +91,35 @@ export const projects = [
     ],
   },
   {
-    title: "Silver Diner - Restaurant Ordering Platform",
-    type: "E-commerce",
-    periodISO: "2024-05-10",
-    periodLabel: "May 2024 - Aug 2024",
+    title: "Linea - Modern E-Commerce Shirt Store",
+    type: "E-Commerce Website",
+    periodISO: "2025-07-01",
+    periodLabel: "Jul 2025 - Aug 2025",
     description:
-      "Developed a full-stack ordering platform for a restaurant chain, featuring online reservations, dynamic menu updates, and mobile responsiveness.",
-    images: [],
-    techUsed: ["React", "Redux", "Express.js", "MongoDB"],
+      "Developed a responsive e-commerce platform showcasing a catalog of shirts with search, filtering, and category browsing for easy product discovery. Implemented add-to-cart and checkout flows with secure Stripe payments. Built an admin dashboard for product management, enabling the admin to add, edit, or remove shirts. Created with Next.js, Node.js, PostgreSQL, and Stripe to ensure performance and scalability.",
+    images: lineaImages,
+    techUsed: ["Next.js", "TailwindCSS", "Node.js", "PostgreSQL", "Stripe"],
     actions: [
       {
-        href: "https://silverdiner.com",
-        label: "Visit website",
+        href: "https://linea-by-ali.vercel.app/",
+        label: "Live Demo",
         variant: "primary" as const,
       },
     ],
   },
   {
-    title: "Lacoste - Brand Storefront Revamp",
-    type: "E-commerce",
-    periodISO: "2023-11-01",
-    periodLabel: "Nov 2023 - Jan 2024",
+    title: "CoachHub - Multi-Coach Scheduling Platform",
+    type: "SaaS Platform",
+    periodISO: "2025-06-01",
+    periodLabel: "Jun 2025 - Jul 2025",
     description:
-      "Revamped Lacoste’s storefront with improved UX, modern design, and optimized API integrations for faster shopping experience.",
+      "Designed and developed a booking platform that allows clients to browse coaches from different industries and book their preferred expert. Features include personalized coach profiles, real-time availability, and secure Stripe payments. Admins can manage coaches, while each coach has their own dashboard to handle schedules and bookings. Built using Next.js, Node.js, PostgreSQL, and Stripe.",
     images: [],
-    techUsed: ["Next.js", "GraphQL", "TailwindCSS", "Vercel"],
+    techUsed: ["Next.js", "TailwindCSS", "Node.js", "PostgreSQL", "Stripe"],
     actions: [
       {
-        href: "https://lacoste.com",
-        label: "Visit website",
+        href: "https://your-coachhub-link.vercel.app/",
+        label: "Live Demo",
         variant: "primary" as const,
       },
     ],
