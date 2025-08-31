@@ -46,7 +46,7 @@ function ProjectsPage() {
         ))}
       </section>
 
-      <section className="mt-12">
+      <section className="mb-16">
         {filteredProjects.map((project) => (
           <ProjectShowcase
             key={project.title}

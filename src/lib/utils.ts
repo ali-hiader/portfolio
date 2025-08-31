@@ -57,6 +57,23 @@ export const filterOptions = [
 
 export const projects = [
   {
+    title: "Linea - Modern E-Commerce Shirt Store",
+    type: "E-Commerce Website",
+    periodISO: "2025-07-01",
+    periodLabel: "Jul 2025 - Aug 2025",
+    description:
+      "Developed a responsive e-commerce platform showcasing a catalog of shirts with search, filtering, and category browsing for easy product discovery. Implemented add-to-cart and checkout flows with secure Stripe payments. Built an admin dashboard for product management, enabling the admin to add, edit, or remove shirts. Created with Next.js, Node.js, PostgreSQL, and Stripe to ensure performance and scalability.",
+    images: lineaImages,
+    techUsed: ["Next.js", "TailwindCSS", "Node.js", "PostgreSQL", "Stripe"],
+    actions: [
+      {
+        href: "https://linea-by-ali.vercel.app/",
+        label: "Live Demo",
+        variant: "primary" as const,
+      },
+    ],
+  },
+  {
     title: "Revisorven.dk - Accounting & Business Advisory Website",
     type: "Corporate Website",
     periodISO: "2025-04-01",
@@ -90,23 +107,7 @@ export const projects = [
       },
     ],
   },
-  {
-    title: "Linea - Modern E-Commerce Shirt Store",
-    type: "E-Commerce Website",
-    periodISO: "2025-07-01",
-    periodLabel: "Jul 2025 - Aug 2025",
-    description:
-      "Developed a responsive e-commerce platform showcasing a catalog of shirts with search, filtering, and category browsing for easy product discovery. Implemented add-to-cart and checkout flows with secure Stripe payments. Built an admin dashboard for product management, enabling the admin to add, edit, or remove shirts. Created with Next.js, Node.js, PostgreSQL, and Stripe to ensure performance and scalability.",
-    images: lineaImages,
-    techUsed: ["Next.js", "TailwindCSS", "Node.js", "PostgreSQL", "Stripe"],
-    actions: [
-      {
-        href: "https://linea-by-ali.vercel.app/",
-        label: "Live Demo",
-        variant: "primary" as const,
-      },
-    ],
-  },
+
   {
     title: "CoachHub - Multi-Coach Scheduling Platform",
     type: "SaaS Platform",
