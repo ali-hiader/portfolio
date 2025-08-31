@@ -58,7 +58,7 @@ export const filterOptions = [
 export const projects = [
   {
     title: "Linea - Modern E-Commerce Shirt Store",
-    type: "E-Commerce Website",
+    type: "E-commerce",
     periodISO: "2025-07-01",
     periodLabel: "Jul 2025 - Aug 2025",
     description:
@@ -75,7 +75,7 @@ export const projects = [
   },
   {
     title: "Revisorven.dk - Accounting & Business Advisory Website",
-    type: "Corporate Website",
+    type: "AI Integrated",
     periodISO: "2025-04-01",
     periodLabel: "Apr 2025 - May 2025",
     description:
@@ -92,7 +92,7 @@ export const projects = [
   },
   {
     title: "Lejvarebil.dk - Vehicle Rental Booking Platform",
-    type: "Booking System",
+    type: "Scheduling Platform",
     periodISO: "2025-06-01",
     periodLabel: "Jun 2025 - Jul 2025",
     description:
@@ -110,7 +110,7 @@ export const projects = [
 
   {
     title: "CoachHub - Multi-Coach Scheduling Platform",
-    type: "SaaS Platform",
+    type: "Scheduling Platform",
     periodISO: "2025-06-01",
     periodLabel: "Jun 2025 - Jul 2025",
     description:
