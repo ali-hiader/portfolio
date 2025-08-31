@@ -9,6 +9,7 @@ import Link from "next/link";
 
 import ClipIcon from "@/icons/clip";
 import { technologies } from "@/icons";
+import { useRouter } from "next/navigation";
 
 export type ProjectLink = {
   href: string;
@@ -27,6 +28,7 @@ export type Project = {
 };
 
 export default function ProjectShowcase({ project }: { project: Project }) {
+  const router = useRouter();
   const {
     title,
     periodISO,
@@ -59,7 +61,10 @@ export default function ProjectShowcase({ project }: { project: Project }) {
       className="pt-12 overflow-hidden duration-200 motion-reduce:transition-none"
     >
       {/* Heading */}
-      <h3 className="mb-2 text-2xl font-bold tracking-[-0.03em] text-primary-foreground">
+      <h3
+        onClick={() => router.push(`#${title.split(" ")[0].toLowerCase()}`)}
+        className="mb-2 text-2xl font-bold tracking-[-0.03em] text-primary-foreground cursor-pointer"
+      >
         {title}
       </h3>
       {(periodISO || periodLabel) && (
