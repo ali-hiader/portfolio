@@ -101,12 +101,6 @@ export default function HeroVideoDialog({
               onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside video
             >
               {/* Close button */}
-              <motion.button
-                onClick={() => setIsVideoOpen(false)}
-                className="absolute top-2 right-2 rounded-full bg-neutral-900/70 p-2 text-white backdrop-blur-md hover:bg-neutral-900"
-              >
-                <XIcon className="size-5" />
-              </motion.button>
 
               {/* Video always vertical */}
               <div className="relative w-full overflow-hidden border-2 border-white flex items-center justify-center bg-black/10">
@@ -116,6 +110,12 @@ export default function HeroVideoDialog({
                   autoPlay
                   className="w-full h-auto max-h-[80vh] object-contain"
                 />
+                <motion.button
+                  onClick={() => setIsVideoOpen(false)}
+                  className="absolute top-2 right-2 bg-neutral-900/50 p-2 text-white backdrop-blur-md hover:bg-neutral-900/70 cursor-pointer"
+                >
+                  <XIcon className="size-5" />
+                </motion.button>
               </div>
             </motion.div>
           </motion.div>

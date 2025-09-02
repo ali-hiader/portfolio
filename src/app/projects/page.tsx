@@ -3,10 +3,11 @@
 import ContactBtn from "@/components/contact-btn";
 import ProjectShowcase from "@/components/project";
 import { filterOptions, projects } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function ProjectsPage() {
   const [filter, setFilter] = useState("All");
+  const [openFilters, setOpenFilters] = useState(false);
   const [filteredProjects, setFilteredProjects] = useState(projects);
 
   useEffect(() => {
@@ -36,7 +37,20 @@ function ProjectsPage() {
         <p></p>
       </hgroup>
 
-      <section className="flex items-center gap-2 mt-4">
+      <button
+        onClick={() => setOpenFilters((prev) => !prev)}
+        className={`${
+          openFilters === true && "bg-primary text-white"
+        } px-4 py-1 mt-4 border border-primary-foreground/80 cursor-pointer inline-block md:hidden transition-all`}
+      >
+        Filters
+      </button>
+
+      <section
+        className={`${
+          openFilters ? "flex" : "hidden md:flex"
+        } flex md:flex-row flex-col max-w-2/3 sm:max-w-1/2 md:max-w-full gap-2 mt-4`}
+      >
         {filterOptions.map((filterOption) => (
           <FilterBtn
             updateFilter={updateFilter}
@@ -82,7 +96,7 @@ function FilterBtn({ name, currentFilter, updateFilter }: FilterBtnProps) {
       onClick={() => updateFilter(name)}
       className={`${
         currentFilter === name && "bg-primary text-white"
-      } px-4 py-1 border border-primary-foreground/80 cursor-pointer`}
+      } px-4 py-1 border border-primary-foreground/80 cursor-pointer whitespace-nowrap transition-all`}
     >
       {name}
     </button>

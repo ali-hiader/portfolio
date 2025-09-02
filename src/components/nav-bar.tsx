@@ -25,15 +25,15 @@ export default function NavBar() {
           Muhammad Ali Haider
         </h2> */}
       </div>
-      <div className="fixed z-50 top-0 left-1/2 -translate-x-1/2 hidden w-fit  bg-white shadow-lg md:flex my-4">
-        <ul className="relative flex items-center space-x-1  border border-black/10 bg-white px-1.5 py-1 shadow-md">
+      <div className="fixed z-50 top-0 left-1/2 -translate-x-1/2 w-fit  bg-white shadow-lg flex my-4">
+        <ul className="relative flex items-center border border-black/10 bg-white px-1.5 py-1 shadow-md">
           {links.map(({ href, label }) => {
             const isActive = pathname === href;
             return (
               <li key={href} className="relative list-none">
                 <Link
                   href={href}
-                  className={`block px-4 py-1.5 text-sm font-medium transition
+                  className={`block px-3 sm:px-4 py-1.5 text-sm font-medium transition
               ${
                 isActive
                   ? "text-emerald-700"
@@ -60,7 +60,7 @@ export default function NavBar() {
           {/* CTA Button */}
           <li className="list-none">
             <Link
-              className="relative inline-block cursor-pointer  bg-emerald-600 px-4 py-1.5 text-sm font-medium text-white transition-all duration-300 hover:bg-emerald-700"
+              className="relative inline-block cursor-pointer  bg-emerald-600 px-4 py-1.5 text-sm font-medium text-white transition-all duration-300 hover:bg-emerald-700 whitespace-nowrap"
               href="\#contact"
             >
               Let&apos;s Talk

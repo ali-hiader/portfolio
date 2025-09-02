@@ -128,7 +128,7 @@ export default function ProjectShowcase({ project }: { project: Project }) {
 
           {/* THUMBNAILS */}
           {total > 1 && (
-            <div className="grid sm:grid-cols-6 grid-cols-3  gap-2">
+            <div className="grid grid-cols-6 sm:gap-2 gap-1">
               {images.map((img, i) => {
                 const active = i === safeIndex;
                 return (

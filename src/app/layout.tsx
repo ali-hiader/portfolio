@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
       <body
         className={`${raleway.className} ${cormorantGaramond.variable} ${share_Tech_Mono.variable} bg-background antialiased`}
       >

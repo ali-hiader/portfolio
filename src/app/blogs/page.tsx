@@ -12,14 +12,14 @@ function BlogsPage() {
     setTimeout(() => setClicked(false), 5000);
   }
   return (
-    <main className="px-4 sm:px-[10%] flex flex-col items-center justify-center  min-h-[calc(100vh-80px)] ">
+    <main className="px-4 sm:px-[10%] mt-24 sm:mt-0 flex flex-col items-center justify-start sm:justify-center min-h-[calc(100vh-12vh)] ">
       <SparklesText>
-        <AuroraText className="text-7xl font-extrabold mb-6">
+        <AuroraText className="sm:text-6xl lg:text-7xl text-5xl font-extrabold mb-6">
           {" "}
           Coming Soon
         </AuroraText>
       </SparklesText>
-      <p className="max-w-xl text-center text-lg font-medium text-gray-500">
+      <p className="max-w-xl px-4 text-center text-lg font-medium text-gray-500">
         I am almost there! Subscribe to my blogs to get ahead in your skills and
         services.
       </p>

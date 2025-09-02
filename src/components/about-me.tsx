@@ -100,7 +100,7 @@ function AboutMe({ isAboutPage }: Props) {
       </section>
 
       <div
-        className="mt-8 md:mt-0 flex items-start justify-end"
+        className="mt-8 md:mt-0 flex items-start justify-center px-4 sm:justify-end"
         style={{ opacity: 1, transform: "none" }}
       >
         <div className="max-w-96 max-h-[400px] relative h-fit border border-[#333]  bg-primary text-white shadow flex flex-col">
