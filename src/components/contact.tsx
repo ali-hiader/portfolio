@@ -117,7 +117,7 @@ function ContactPage() {
 
             <div className="flex items-center justify-between w-full">
               {message.length >= 500 && (
-                <p className="text-rose-600 text-sm">
+                <p className="text-slate-600 text-sm">
                   Message should be less than 500 chracters
                 </p>
               )}

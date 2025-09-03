@@ -26,15 +26,15 @@ function BlogsPage() {
 
       <form
         onSubmit={onSubmit}
-        className="outline outline-[#008058]/40 mt-10 min-h-10 flex bg-gray-100"
+        className="outline outline-[#008058]/40 mt-10 sm:min-h-10 flex sm:flex-row flex-col bg-gray-100"
       >
         <input
           placeholder="Please enter your email address"
           type="text"
           required
-          className="outline-none border-none px-4 min-w-80"
+          className="outline-none border-none px-4 min-w-80 py-2"
         />
-        <button className="cursor-pointer px-6 border border-[#008058] bg-[#008058] text-white text-sm">
+        <button className="cursor-pointer px-6 py-2 border border-[#008058] bg-[#008058] text-white text-sm">
           Notify me
         </button>
       </form>

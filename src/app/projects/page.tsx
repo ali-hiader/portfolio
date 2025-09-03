@@ -61,7 +61,7 @@ function ProjectsPage() {
         ))}
       </section>
 
-      <section className="mb-16">
+      <section className="my-16 space-y-12">
         {filteredProjects.map((project) => (
           <ProjectShowcase
             key={project.title}
@@ -95,8 +95,8 @@ function FilterBtn({ name, currentFilter, updateFilter }: FilterBtnProps) {
     <button
       onClick={() => updateFilter(name)}
       className={`${
-        currentFilter === name && "bg-primary text-white"
-      } px-4 py-1 border border-primary-foreground/80 cursor-pointer whitespace-nowrap transition-all`}
+        currentFilter === name && "bg-secondary text-white border-secondary/80"
+      } px-4 py-1 border border-secondary-foreground/80 cursor-pointer whitespace-nowrap transition-all`}
     >
       {name}
     </button>

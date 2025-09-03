@@ -78,7 +78,7 @@ export default function HeroVideoDialog({
       {/* Simple button instead of preview */}
       <button
         onClick={() => setIsVideoOpen(true)}
-        className="pr-6 pl-3 py-3 shadow border border-white text-white font-semibold hover:bg-emerald-50 hover:border-transparent transition flex gap-2 items-center group hover:text-primary cursor-pointer"
+        className="pr-6 pl-3 py-3 shadow border border-white text-white font-semibold hover:bg-slate-100 hover:border-transparent transition-all duration-500 flex gap-2 items-center group hover:text-primary cursor-pointer"
       >
         <VideoIcon className="size-6 fill-white group-hover:fill-primary" />
         What Clients Say

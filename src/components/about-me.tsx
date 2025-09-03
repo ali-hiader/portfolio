@@ -12,8 +12,8 @@ interface Props {
 
 function AboutMe({ isAboutPage }: Props) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-24 text-primary-foreground">
-      <section className="mb-12">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 text-primary-foreground my-24">
+      <div className="">
         <h2
           id="about"
           className="mb-2 scroll-mt-20 box-decoration-clone bg-clip-text text-[1.7rem] font-[750] motion-reduce:transition-none"
@@ -27,7 +27,7 @@ function AboutMe({ isAboutPage }: Props) {
           )}
         </h2>
 
-        <div className="prose-quoteless prose prose-dark">
+        <div className="pslate-quoteless pslate pslate-dark">
           <p className="mb-2">
             I’m{" "}
             <span className="headingFont text-2xl font-bold">
@@ -53,7 +53,7 @@ function AboutMe({ isAboutPage }: Props) {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              className="group flex w-fit items-center px-4 py-2 font-medium duration-200 disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none bg-primary/90 text-white hover:bg-primary"
+              className="group flex w-fit items-center px-4 py-2 font-medium duration-200 disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none bg-secondary/90 text-white hover:bg-secondary"
               href="https://github.com/ali-hiader"
             >
               <svg
@@ -89,7 +89,7 @@ function AboutMe({ isAboutPage }: Props) {
             </a>
 
             <Link
-              className="group flex w-fit items-center px-4 py-2 font-medium duration-200 disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none border border-primary-foreground hover:bg-emerald-50 hover:border-transparent"
+              className="group flex w-fit items-center px-4 py-2 font-medium duration-200 disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none border border-primary-foreground hover:bg-rose-100 hover:border-transparent"
               href="/about#certificates"
             >
               More About me
@@ -97,7 +97,7 @@ function AboutMe({ isAboutPage }: Props) {
             </Link>
           </div>
         )}
-      </section>
+      </div>
 
       <div
         className="mt-8 md:mt-0 flex items-start justify-center px-4 sm:justify-end"
@@ -114,7 +114,7 @@ function AboutMe({ isAboutPage }: Props) {
           <div className="-z-50 absolute border-8 top-0 bottom-0 right-0 left-0 translate-y-6 translate-x-6 border-primary"></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

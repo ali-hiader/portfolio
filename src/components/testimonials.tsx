@@ -46,7 +46,7 @@ const TestimonialCard = ({
 export function Testimonials() {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-      <Marquee className="[--duration:25s]">
+      <Marquee className="[--duration:35s]">
         {testimonials.map((testimonial) => (
           <TestimonialCard key={testimonial.name} {...testimonial} />
         ))}

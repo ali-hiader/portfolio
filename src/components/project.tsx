@@ -58,7 +58,7 @@ export default function ProjectShowcase({ project }: { project: Project }) {
   return (
     <div
       id={title.split(" ")[0].toLowerCase()}
-      className="pt-12 overflow-hidden duration-200 motion-reduce:transition-none"
+      className="overflow-hidden duration-200 motion-reduce:transition-none"
     >
       {/* Heading */}
       <h3
@@ -193,8 +193,8 @@ export default function ProjectShowcase({ project }: { project: Project }) {
               className={
                 "group flex w-fit items-center  px-4 py-2 font-medium duration-200 motion-reduce:transition-none " +
                 (action.variant === "primary"
-                  ? "bg-primary/90 text-white hover:bg-primary"
-                  : "border border-primary-foreground hover:bg-emerald-50")
+                  ? "bg-secondary/90 text-white hover:bg-secondary"
+                  : "border border-primary-foreground hover:bg-rose-100")
               }
             >
               <ClipIcon className="mr-2 size-5 stroke-2" />

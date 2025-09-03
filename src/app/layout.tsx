@@ -36,6 +36,7 @@ export default function RootLayout({
         className={`${raleway.className} ${cormorantGaramond.variable} ${share_Tech_Mono.variable} bg-background antialiased`}
       >
         <NavBar />
+
         {children}
       </body>
     </html>
