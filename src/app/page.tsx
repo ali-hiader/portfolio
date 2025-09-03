@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <Hero />
-      <main className="px-4 sm:px-[10%]">
+      <main className="px-4 sm:px-[10%] mt-6">
         <AboutMe />
         <section className="">
           <h2

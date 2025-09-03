@@ -6,9 +6,11 @@ import { ToastContainer, toast } from "react-toastify";
 import EmailIcon from "@/icons/email";
 import { icons } from "@/icons";
 import { LinkedinIcon } from "@/icons/linkedin";
+import { WhatsappIcon } from "@/icons/whatsapp";
 
 function ContactPage() {
   const [message, setMessage] = useState("");
+
   function submitHandler(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
@@ -31,6 +33,11 @@ function ContactPage() {
     name.value = "";
     email.value = "";
     message.value = "";
+  }
+
+  function copyToClipBoard() {
+    navigator.clipboard.writeText("+923060444895");
+    toast.done("Number copied to clipboard");
   }
 
   return (
@@ -161,6 +168,17 @@ function ContactPage() {
         >
           <EmailIcon />
           Email
+          <icons.ArrowRight className="lucide lucide-arrow-right ml-2 size-4 duration-200 group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" />
+        </a>
+        <a
+          target="_blank"
+          className="group flex w-fit items-center px-4 py-2 font-medium duration-200 disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none border text-neutral-700 hover:bg-[#f2f3f5] dark:border-neutral-800 dark:bg-[#161617] dark:text-white dark:hover:border-neutral-700 dark:hover:bg-[#202021] gap-2"
+          href="https://wa.me/+923060444895"
+          onClick={copyToClipBoard}
+          rel="noopener noreferrer"
+        >
+          <WhatsappIcon className="size-6" />
+          WhatsApp
           <icons.ArrowRight className="lucide lucide-arrow-right ml-2 size-4 duration-200 group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" />
         </a>
         <a
