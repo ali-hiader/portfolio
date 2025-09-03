@@ -12,7 +12,7 @@ interface Props {
 
 function AboutMe({ isAboutPage }: Props) {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 text-primary-foreground my-24">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 text-primary-foreground mb-24 mt-12 md:mt-16 lg:mt-24">
       <div className="">
         <h2
           id="about"
