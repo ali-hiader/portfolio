@@ -15,7 +15,7 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex items-center justify-between px-4 py-5 bg-white">
+    <nav className="flex items-center justify-between px-4 py-3 sm:py-5 bg-white">
       <Link href={"/"} className="flex items-center  gap-4">
         <h2 className="sm:text-2xl text-xl font-extrabold headingFont text-black uppercase">
           Muhammad Ali Haider
