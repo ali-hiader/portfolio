@@ -10,7 +10,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl font-bold headingFont text-center">
             Professional booking systems to grow your business
           </h1>
-          <p className="sm:text-lg text-base px-4 text-center text-white/90">
+          <p className="sm:text-lg text-base sm:px-4 text-center text-white/90">
             With seamless client scheduling, secure payments, and workflow
             automation, all you have to do is show up on time.
           </p>

@@ -17,7 +17,7 @@ export default function NavBar() {
   return (
     <nav className="flex items-center justify-between px-4 py-5 bg-white">
       <Link href={"/"} className="flex items-center  gap-4">
-        <h2 className="text-2xl font-extrabold headingFont text-black uppercase">
+        <h2 className="sm:text-2xl text-xl font-extrabold headingFont text-black uppercase">
           Muhammad Ali Haider
         </h2>
       </Link>
