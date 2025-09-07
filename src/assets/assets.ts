@@ -19,6 +19,8 @@ import revisorvenFour from "./revisorven/3.png";
 
 import lineaOne from "./linea/1.png";
 import lineaTwo from "./linea/2.png";
+import lineaThree from "./linea/3.png";
+import lineaFour from "./linea/4.png";
 
 export const assets = {
   desktopSetup,
@@ -44,4 +46,4 @@ export const revisorvenImages = [
   revisorvenFour,
 ];
 
-export const lineaImages = [lineaOne, lineaTwo];
+export const lineaImages = [lineaOne, lineaTwo, lineaThree, lineaFour];
