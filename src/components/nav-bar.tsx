@@ -55,7 +55,7 @@ export default function NavBar() {
           <li className="list-none">
             <Link
               className="relative inline-block cursor-pointer bg-primary-light px-4 py-1.5 text-sm font-medium text-white transition-all duration-300 hover:bg-primary-light/80 whitespace-nowrap"
-              href="#contact"
+              href="/#contact"
             >
               Let&apos;s Talk
               <div
